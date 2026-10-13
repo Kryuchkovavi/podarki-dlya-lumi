@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&display=swap');
+:root{--ink:#f9e9d1;--muted:#bca69c;--orange:#ffb34e;--pink:#ff786f;--panel:#382832;--line:#6a4b4d}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% -10%,#70474a 0,#30222e 48%,#211923 100%);color:var(--ink);font-family:'Nunito',system-ui,sans-serif;display:flex;align-items:center;justify-content:center;padding:24px}.shell{width:min(1180px,100%)}.top{display:flex;align-items:center;justify-content:space-between;gap:20px;margin:0 0 17px}.brand{display:flex;align-items:center;gap:13px}.brand-mark{display:grid;place-items:center;width:47px;height:47px;border-radius:15px;background:#ffb34e;color:#5b302b;font-size:29px;box-shadow:0 4px 0 #a85c3c}.eyebrow{font-size:10px;letter-spacing:2.5px;font-weight:900;color:#f9a95a}h1{font-size:clamp(19px,3vw,28px);margin:1px 0 0;line-height:1.1;letter-spacing:-.7px}h1 i{font-style:normal;color:#ffb34e}.top-right{display:flex;align-items:center;gap:14px}.save-state{font-size:10px;letter-spacing:1.1px;font-weight:900;color:#c8b7a7;white-space:nowrap}.dot{display:inline-block;width:7px;height:7px;background:#8ed18d;border-radius:50%;margin-right:7px;box-shadow:0 0 9px #8ed18d}.icon-btn,.pause-btn{font:inherit;cursor:pointer;color:#ffe6c7;border:1px solid #79535a;background:#49333f;border-radius:11px;padding:10px 13px;font-weight:900}.icon-btn span{font-size:9px;letter-spacing:1px}.game-frame{position:relative;overflow:hidden;border:4px solid #68434a;border-radius:17px;background:#76b6c2;box-shadow:0 9px 0 #211923,0 25px 55px #130e17a6;isolation:isolate}canvas{display:block;width:100%;height:auto;image-rendering:pixelated;image-rendering:crisp-edges}.hud{position:absolute;z-index:2;left:0;right:0;top:0;display:flex;align-items:center;gap:9px;padding:13px;background:linear-gradient(#241c2bc9,transparent);pointer-events:none}.hud-card{display:flex;align-items:center;gap:8px;background:#342631e8;border:1px solid #88605b;border-radius:10px;padding:7px 10px;min-width:105px;box-shadow:0 3px 0 #20182080}.hud-card small,.level-name small{display:block;color:#cbb7a6;font-size:8px;font-weight:900;letter-spacing:1.2px}.hud-card strong{font-size:13px}.hud-icon{font-size:21px;color:#ffb34e}.health .hud-icon,.hearts{color:#ff8276}.hearts{font-size:14px;letter-spacing:2px;white-space:nowrap}.level-name{flex:1;min-width:100px;padding:0 8px}.level-name strong{font-size:12px;display:block;margin:2px 0 5px}.progress-track{height:4px;background:#543a43;border-radius:5px;overflow:hidden}.progress-track span{display:block;width:0;height:100%;background:#ffb34e;transition:width .2s}.pause-btn{pointer-events:auto;width:39px;height:39px;padding:0;font-size:17px}.overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#201a2c7c;z-index:3;padding:18px}.overlay.hidden{display:none}.panel{width:min(420px,95%);max-height:calc(100% - 12px);overflow:auto;text-align:center;background:linear-gradient(145deg,#49323fef,#302632f5);border:2px solid #9a665a;border-radius:19px;padding:26px 30px 23px;box-shadow:0 8px 0 #201821c9,0 20px 50px #17111c77;backdrop-filter:blur(5px)}.sun-badge{width:49px;height:49px;display:grid;place-items:center;margin:0 auto 10px;background:#ffb34e;border-radius:15px;color:#703a31;font-size:27px;box-shadow:0 4px 0 #b56a45}h2{font-size:clamp(24px,4vw,34px);line-height:1.05;margin:9px 0 10px;letter-spacing:-1px}#overlayText{color:#d9c7bb;font-size:13px;line-height:1.6;margin:0 auto 17px;max-width:350px}.controls-mini{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin:0 auto 19px;text-align:left}.controls-mini span{font-size:10px;color:#d8c7bb;background:#261f2c99;border:1px solid #634752;border-radius:8px;padding:8px}.controls-mini b{color:#ffbf6c;margin-right:4px}.primary,.secondary{font-family:inherit;cursor:pointer;border:0;border-radius:10px;width:100%;font-weight:900}.primary{padding:14px;background:#ffb34e;color:#4c2a2b;box-shadow:0 4px 0 #bd7146;letter-spacing:.5px;font-size:12px}.primary span{float:right;font-size:17px;line-height:12px}.primary:hover{filter:brightness(1.08);transform:translateY(-1px)}.secondary{margin-top:10px;background:transparent;color:#f4d4b6;padding:9px;font-size:11px}.tiny-note{margin-top:10px;font-size:9px;letter-spacing:.3px;color:#b69d9d}.toast{position:absolute;z-index:4;left:50%;top:82px;transform:translate(-50%,-10px);opacity:0;transition:.2s;background:#302632ed;border:1px solid #ffb34e;color:#ffe6c7;border-radius:10px;padding:9px 15px;font-size:12px;font-weight:800;pointer-events:none;white-space:nowrap}.toast.show{opacity:1;transform:translate(-50%,0)}.hint{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);background:#2c2331c9;border:1px solid #72505a;border-radius:8px;padding:6px 12px;font-size:10px;color:#ffe5c5;white-space:nowrap;pointer-events:none}.bottom{display:flex;justify-content:space-between;gap:12px;margin-top:17px;color:#bba7a2;font-size:9px;letter-spacing:1.1px;font-weight:900}.keycap{display:inline-block;border:1px solid #77545b;background:#3b2a37;border-radius:4px;padding:3px 5px;color:#ffcb86;font-size:9px}.sep{color:#6e4f59;padding:0 6px}.heart{color:#ff786f;font-size:13px}@media(max-width:680px){body{padding:10px}.top{align-items:flex-start}.top-right{gap:7px;flex-direction:column;align-items:flex-end}.save-state{font-size:8px}.icon-btn{padding:6px 8px}.brand-mark{width:38px;height:38px}.hud{gap:5px;padding:7px}.hud-card{min-width:0;padding:5px 7px;gap:4px}.hud-card small,.level-name small{font-size:6px;letter-spacing:.6px}.hud-card strong{font-size:10px}.hud-icon{font-size:15px}.hearts{font-size:10px}.level-name{padding:0 3px}.level-name strong{font-size:9px}.pause-btn{width:29px;height:29px;border-radius:8px}.hint{font-size:8px;bottom:5px;padding:4px 7px}.panel{padding:18px 17px}.controls-mini span{font-size:9px;padding:6px}.bottom{font-size:8px;letter-spacing:.5px}.bottom>div:last-child{display:none}}@media(max-width:420px){.save-state{display:none}.hud-card.timer{display:none}.level-name{min-width:80px}}
+/* Enlarged play area while keeping the stable original game logic */
+.shell{width:min(1900px,100%)}
+body{padding:14px}
+.game-frame{border-width:5px;border-radius:20px}
+.overlay{background:#201a2ce8}
+.panel{width:min(680px,94%);padding:38px 42px 34px;border-radius:24px}
+.panel .eyebrow{font-size:12px}
+#overlayText{font-size:16px;max-width:500px}
+.controls-mini{max-width:500px;gap:10px}
+.controls-mini span{font-size:13px;padding:11px}
+.primary{font-size:15px;padding:17px}
+.secondary{font-size:13px}
+.tiny-note{font-size:11px}
+@media(max-width:680px){.shell{width:100%}body{padding:8px}.panel{padding:18px 16px}.controls-mini span{font-size:9px;padding:6px}#overlayText{font-size:12px}}
+/* Full-screen story hub */
+.overlay{background:#201823f7;backdrop-filter:blur(2px);padding:22px}
+.panel{width:min(780px,96%);max-height:96%;overflow:auto;background:linear-gradient(145deg,#49323ff7,#302632fa);padding:clamp(22px,3vw,42px);}
+.menu-tabs{display:flex;justify-content:center;gap:8px;margin:0 auto 15px;flex-wrap:wrap}
+.menu-tab{font:inherit;font-weight:900;font-size:12px;color:#f5d7bb;background:#2b202d;border:1px solid #72505a;border-radius:10px;padding:10px 15px;cursor:pointer}
+.menu-tab.active{background:#ffb34e;color:#4c2a2b;border-color:#ffcb82}
+.menu-view{max-width:560px;margin:0 auto 14px}
+.hidden{display:none!important}
+#levelsView{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.level-choice{display:flex;align-items:center;gap:10px;text-align:left;border:1px solid #73505a;background:#2b202de8;color:#ffe8cf;border-radius:12px;padding:12px;cursor:pointer;font:inherit;min-width:0}
+.level-choice:disabled{opacity:.4;cursor:not-allowed}
+.level-choice:not(:disabled):hover{border-color:#ffb34e;background:#47303b}
+.level-number{display:grid;place-items:center;width:35px;height:35px;flex-shrink:0;border-radius:9px;background:#ffb34e;color:#4c2a2b;font-weight:1000}
+.level-copy{display:flex;flex-direction:column;gap:4px;min-width:0}.level-copy b{font-size:12px}.level-copy small{font-size:10px;color:#cbb7a6}.level-gift{font-size:21px;margin-left:auto}
+#settingsView p{color:#d9c7bb;font-size:13px;line-height:1.5}
+#storyView.hidden{display:none}
+@media(max-width:580px){#levelsView{grid-template-columns:1fr}.menu-tab{font-size:10px;padding:8px 10px}.level-choice{padding:9px}.panel{max-height:98%;}}
+
+/* Подарки для Луми: компактное меню и мягкая карточка истории */
+.intro-panel{padding:20px 24px 17px}.intro-panel .sun-badge{width:42px;height:42px;margin-bottom:7px}.intro-panel h2{margin:7px 0 8px;font-size:clamp(23px,3vw,30px)}.intro-panel #overlayText{font-size:12px;line-height:1.48;margin-bottom:12px}.intro-panel .controls-mini{margin-bottom:13px}.tiny-note{margin-top:8px}.bottom{justify-content:center}.bottom>div:empty{display:none}
+
+/* Compact game window and crisp narrative objective panel */
+.shell{width:min(1000px,100%)}
+body{padding:16px}
+.game-frame{border-width:4px;border-radius:15px}
+.panel{width:min(540px,94%);padding:22px 26px 20px}
+.panel .eyebrow{font-size:10px}
+#overlayText{font-size:13px;max-width:390px}
+.controls-mini{max-width:390px;gap:7px}
+.controls-mini span{font-size:10px;padding:8px}
+.primary{font-size:12px;padding:13px}
+.secondary{font-size:11px}
+.tiny-note{font-size:9px}
+.mission-card{position:absolute;z-index:2;left:14px;top:75px;width:min(315px,calc(100% - 28px));padding:12px 14px 10px;background:linear-gradient(135deg,#fffaf0f5,#f7e7d8f2);border:1px solid #d8a777;border-left:4px solid #e99b50;border-radius:12px;color:#49313b;box-shadow:0 5px 16px #24172538;pointer-events:none;backdrop-filter:blur(4px)}
+.mission-card.hidden{display:none!important}
+.mission-kicker{font-size:8px;letter-spacing:1.5px;font-weight:900;color:#b66c42;margin-bottom:4px}
+#missionTitle{display:block;font-size:12px;line-height:1.3;font-weight:900}
+#missionText{font-size:11px;line-height:1.4;margin:5px 0 8px;color:#59424a}
+.mission-progress{display:flex;justify-content:space-between;align-items:center;padding-top:6px;border-top:1px solid #e8cdb5;font-size:9px;font-weight:900;color:#a65e40}
+@media(max-width:680px){.shell{width:100%}body{padding:8px}.panel{padding:18px 16px}.mission-card{left:7px;top:54px;width:min(265px,calc(100% - 14px));padding:8px 10px}.mission-kicker{font-size:7px}#missionTitle{font-size:10px}#missionText{font-size:9px;margin:3px 0 5px}.mission-progress{font-size:8px}.hud{top:auto;bottom:0;background:linear-gradient(transparent,#241c2bd9);}.hint{bottom:52px}}
+
+/* Финальная компактная оболочка: сохраняем пропорции игрового canvas */
+.shell{width:min(900px,100%)}
+body{padding:12px}
+@media(max-width:680px){.shell{width:100%}body{padding:8px}}
